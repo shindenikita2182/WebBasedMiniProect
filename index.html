@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="icon" href="gsm.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+  
+</head>      
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headlogo">
+                &lt;
+            </div>
+            <div class="heading">
+                <div class="top-h"><h1>Online Code Editor</h1></div>
+                <div class="top-h"><h4>HTML | CSS | JavaScript</h4></div>
+            </div>
+            <div class="headlogo">
+                &#47;&gt;
+            </div>
+        </div>
+        <div class="main">
+            <div class="top">
+                <div class="html-div">
+                    <label id="html">
+                        <div class="label-box">HTML</div>
+                        <div class="labelbox2">
+                            <button id="d1"><img class="down" src="download.png"></button>
+                        </div>
+                    </label>
+                    <textarea id="htmlCode" onkeyup="run()" class="textbox"></textarea>
+                </div>
+                <div class="css-div">
+                    <label id="css">
+                        <div class="label-box">CSS</div>
+                        <div class="labelbox2">
+                            <button id="d2"><img class="down" src="download.png"></button>
+                        </div>
+                    </label>
+                    <textarea id="cssCode" onkeyup="run()" class="textbox"></textarea>
+                </div>
+                <div class="js-div">
+                    <label id="js">
+                        <div class="label-box">JavaScript</div>
+                        <div class="labelbox2">
+                            <button id="d3"><img class="down" src="download.png"></button>
+                        </div>
+                    </label>
+                    <textarea id="jsCode" onkeyup="run()" class="textbox"></textarea>
+                </div>
+            </div>
+            <div class="bottom">
+                <label id="out">
+                    <div class="label-box">Output</div>
+                    <div class="labelbox2">
+                        <button id="shareBtn" onclick="share()">
+                            <img class="down" src="download.png">
+                        </button>
+                        <button id="btn" onclick="goFullscreen('output'); return false">
+                            <img class="down" src="fullscreen.png">
+                        </button>
+                    </div>
+                </label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+        <div class="footer">
+            Developed by <a href="https://www.linkedin.com/in/nikitashinde2182" target="_blank">&nbsp;Nikita Shinde</a>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
